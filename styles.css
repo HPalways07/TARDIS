@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("bg.jpg");
+    color: white;
+}
+.toppart{
+    background-color: rgb(37, 37, 37);
+    color: white;
+    width: 0vw;
+    font-family: 'Outfit';
+    overflow-x: hidden;
+    width: 0vw;
+    transition: 0.5s; 
+    z-index: 1; 
+    top: 0;
+}
+.toppart a{
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.toppart a:hover{
+    text-shadow: 0 0 10px #05c5ff;
+}
+.toppart .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.container{
+    display: flex;
+}
+.bar{
+    padding: 45px;
+}
+.bar li{
+    padding: 13px 0;
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Outfit';
+}
+.main{
+    width: 100vw;
+    padding: 13px 13px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.register{
+    margin: 100px auto 0px auto;
+    width: 400px;
+    background-color: #66ff00ea;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 20px;
+    font-family: 'Outfit';
+
+}
+.register input{
+    font-family: 'Outfit';
+    border-radius: 5px;
+    outline: 0;
+    padding: 7px;
+}
+.submit{
+    width: 400px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    height: 30px;
+    align-items: center;
+    font-weight: bolder;
+}
+.register label{
+    font-family: 'Outfit';
+    font-weight: bold;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Outfit';
+}
+.toppart .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.toppart a{
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.toppart a:hover{
+    text-shadow: 0 0 10px #05c5ff;
+}
+.annoying{
+    font-weight: bolder;
+}

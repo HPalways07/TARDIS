@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in Page</title>
+    <script>
+        function openNav() {
+  document.getElementById("toppart").style.width = "30vw";
+  document.getElementById("m").style.width = "70vw"
+}
+
+function closeNav() {
+  document.getElementById("toppart").style.width = "0";
+  document.getElementById("m").style.width = "100vw"
+}
+    </script>
+    <script type="module">
+        import n from "./main.js"
+        import e from "./main.js"
+        import p from "./main.js"
+        function login(){
+            email = document.getElementById("email").value;
+            password = document.getElementById("pwrd").value;
+            if (email == e && password == p) {
+                alert("Log-in successful")
+            } else{
+                alert("Your account doesn't exist")
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Fira+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Outfit:wght@200;300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="toppart" class="toppart">
+            <br>
+            <img src="1685430215358-removebg-preview.png" alt="TARDIS" width="225" height="225">
+            <nav class="bar">
+                <ul>
+                    <a href="javascript:void(0)" class="closebtn"  id="close"  onclick="closeNav()">x</a>
+                    <li><a href ="INDEX.html">Home</a></li>
+                    <li><a href=registration.html>Register</a></li>
+                    <li><a href="#">Log-in</a></li>
+                    <li><a href="console.html">Console</a></li>
+                    <li><a href="database.html">Historical Database</a></li>
+                    <li><a href="travel_log.html">Travel Log</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main" id="m">
+            <div class="unp">
+                <span onclick="openNav()" class="h">☰</span>
+             </div>
+             <br><br><br><br>
+                <div class="register">
+                    <h2>Login Here</h2>
+                    <form method="post" id="registeration" onsubmit="return false" action="thank_you.html">
+                        <label>E-mail</label>
+                        <br>
+                        <input type="text" name="email" id="email" placeholder="Enter Your Email">
+                        <br><br>
+                        <label>Password:</label>
+                        <br>
+                        <input type="password" name="password" id="pwrd" placeholder="Enter your password">
+                        <br><br>
+                        <center>
+                        <input type="submit" value="Log-in" name="submit" id="submit" class="submit" onclick="login()">
+                        </center>
+                        <br>    
+                        <p class="annoying">Dont have an account, <a href="registration.html">Sign Up</a> here</p>
+                    </form>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.toppart{
+    background-color: rgb(37, 37, 37);
+    color: white;
+    width: 0vw;
+    font-family: 'Outfit';
+    overflow-x: hidden;
+    transition: 0.5s; 
+    z-index: 1; 
+    top: 0;
+}
+.toppart a{
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.toppart a:hover{
+    text-shadow: 0 0 10px #05c5ff;
+}
+.toppart .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.bar{
+    padding: 45px;
+}
+.bar li{
+    list-style: none;
+    font-size: 20px;
+    padding: 13px 0;
+}
+.main{
+    background-color: white;
+    width: 100vw;
+    padding: 33px;
+    font-family: 'Outfit';
+    font-size: 20px ;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+}
+.header{
+    height: 500px;
+    width: device-width;
+    background-image: url("timetravel111.jpg");
+    background-repeat: no-repeat;
+}
+.heading{
+    font-size: 200px;
+    color: white;
+    text-shadow: 0 0 10px rgb(0, 0, 49);
+    font-family: 'Amatic SC';
+    font-weight: 500;
+}
+.info{
+    padding: 66px;
+}
+.info h2{
+    font-family: 'Dancing Script';
+    font-size: 40px;
+    font-weight: 500;
+    color: blueviolet;
+}
+.end{
+    width: device-width;
+    height: 100px;
+    background-color: black;
+}
+.unp{
+    padding: 30px;
+    color: white;
+}
+.h{
+    font-size: 20px;
+}

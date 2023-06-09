@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .toppart{
+        background-color: rgb(37, 37, 37);
+        color: white;
+        width: 0vw;
+        height: 100vh;
+        font-family: 'Outfit';
+        overflow-x: hidden;
+        transition: 0.5s; 
+        z-index: 1; 
+        top: 0;
+    }
+    .toppart a{
+        color: white;
+        display: block;
+        transition: 0.3s;
+        text-decoration: none;
+        height: 100%;
+    }
+    .toppart a:hover{
+        text-shadow: 0 0 10px #05c5ff;
+    }
+    .toppart .closebtn{
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+    .bar{
+        padding: 45px;
+    }
+    .bar li{
+        list-style: none;
+        font-size: 20px;
+        padding: 13px 0;
+    }
+    .main{
+        background-color: white;
+        width: 100vw;
+        padding: 33px;
+        font-family: 'Outfit';
+        font-size: 20px ;
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: flex;
+    }
+    .header{
+        height: 300px;
+        width: device-width;
+        background-image: url("bg.jpg");
+        background-repeat: no-repeat;
+    }
+    .heading{
+        font-size: 110px;
+        color: white;
+        text-shadow: 0 0 10px rgb(0, 0, 49);
+        font-family: 'Great Vibes';
+        font-weight: 100;
+    }
+    .console{
+        padding: 66px;
+        margin: 31px;
+    }
+    .end{
+        width: device-width;
+        height: 130px;
+        background-color: black;
+    }
+    .unp{
+        padding: 30px;
+        color: white;
+    }
+    .h{
+        font-size: 20px;
+    }
+    .Data{
+        padding: 33px;
+    }
+    .head{
+        font-family: 'Dancing Script';
+        font-weight: 500;
+        font-size: 40px;
+        color:blueviolet
+    }
+    table {
+  font-family: 'Outfit';
+  border-collapse: collapse;
+  width: 90%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  width: 30%;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+  height: 20px;
+}
+
+</style>
+</head>
+<body>
+    </style>
+<script>
+function openNav() {
+  document.getElementById("toppart").style.width = "30vw";
+  document.getElementById("m").style.width = "70vw"
+}
+
+function closeNav() {
+  document.getElementById("toppart").style.width = "0";
+  document.getElementById("m").style.width = "100vw"
+}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Fira+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Outfit:wght@200;300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <title>TARDIS</title>
+</head>
+<body>
+    <div class="container">
+    <div id="toppart" class="toppart">
+        <br>
+        <img src="1685430215358-removebg-preview.png" alt="TARDIS" width="225" height="225">
+        <nav class="bar">
+            <ul>
+                <a href="javascript:void(0)" class="closebtn"  id="close"  onclick="closeNav()">x</a>
+                <li><a href="INDEX.html">Home</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="log-in.html">Log-in</a></li>
+                <li><a href="console.html">Console</a></li>
+                <li><a href="#">Historical Database</a></li>
+                <li><a href="travel_log.html">Travel Log</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main" id="m">
+        <div class="header">
+            <div class="unp">
+            <span onclick="openNav()">☰</span>
+            </div>
+            <center>
+                <br>
+                
+                <h1 class="heading">Travelled Destinations</h1>
+            </center>
+        </div>
+        <div class="Data">
+            <h2 class="head">Destinations travelled by You</h2>
+        </div>
+        <center>
+        <table>
+            <tr>
+                <th>Time/Space</th>
+                <th>Place travelled</th>
+                <th>Time on which travelled</th>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+        </table>
+        </center>
+        <br><br>
+        <div class="end">
+
+        </div>
+    </div>
+    </div>
+</body>
+</html> 

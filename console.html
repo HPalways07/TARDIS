@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .toppart{
+        background-color: rgb(37, 37, 37);
+        color: white;
+        width: 0vw;
+        font-family: 'Outfit';
+        overflow-x: hidden;
+        transition: 0.5s; 
+        z-index: 1; 
+        top: 0;
+    }
+    .toppart a{
+        color: white;
+        display: block;
+        transition: 0.3s;
+        text-decoration: none;
+    }
+    .toppart a:hover{
+        text-shadow: 0 0 10px #05c5ff;
+    }
+    .toppart .closebtn{
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+    .bar{
+        padding: 45px;
+    }
+    .bar li{
+        list-style: none;
+        font-size: 20px;
+        padding: 13px 0;
+    }
+    .main{
+        background-color: white;
+        width: 100vw;
+        padding: 23px;
+        font-family: 'Outfit';
+        font-size: 20px ;
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: flex;
+    }
+    .header{
+        height: 500px;
+        width: device-width;
+        background-image: url("bg.jpg");
+        background-repeat: no-repeat;
+    }
+    .heading{
+        font-size: 200px;
+        color: white;
+        text-shadow: 0 0 10px rgb(0, 0, 49);
+        font-family: 'Dancing Script';
+        font-weight: 100;
+    }
+    .console{
+        padding: 26px;
+        margin: 21px;
+    }
+    .end{
+        width: device-width;
+        height: 100px;
+        background-color: black;
+    }
+    .unp{
+        padding: 30px;
+        color: white;
+    }
+    .h{
+        font-size: 20px;
+    }
+    .info{
+        font-family: 'Dancing Script';
+        font-weight: 500;
+        font-size: 40px;
+        color: blueviolet;
+        width: 40vw;
+    }
+    .time{
+        width: 47vw;
+        background: #66ff00ea;
+        padding-top: 23px;
+        border-radius: 10px;
+        padding-right: 30px;
+    }
+    .space{
+        width: 47vw;
+        background: #66ff00ea;
+        padding-top: 23px;
+        border-radius: 10px;
+    }
+    .choice{
+        display: flex;
+    }
+    .h1{
+        color: rgb(1, 1, 73);
+        padding-bottom: 13PX;
+    }
+    .time label{
+        font-family: 'Outfit';
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .time input{
+        font-family: 'Outfit';
+        border-radius: 5px;
+        outline: 0;
+        padding: 7px;
+        width: 30vw;
+    }
+    li{
+        font-size: 18px;
+        width: 40vw;
+    }
+    .t_t{
+        color: white;
+        background: red;
+        width: 40vw;
+    border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+    align-items: center;
+    font-weight: bolder;
+    }
+    .space label{
+        font-family: 'Outfit';
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .space input{
+        font-family: 'Outfit';
+        border-radius: 5px;
+        outline: 0;
+        padding: 7px;
+        width: 30vw;
+    }
+    .end{
+        background-color: black;
+        width: device-width;
+    height: 100px;
+    background-color: black;
+    }
+    .main_time{
+        padding-left: 30px;
+        padding-bottom: 23px;
+    }
+    .main_space{
+        padding-left: 30px;
+        padding-bottom: 23px;
+    }
+    .b{
+        width: 5vw;
+    }
+    .end{
+        background-color: black;
+    }
+    </style>
+<script>
+function openNav() {
+  document.getElementById("toppart").style.width = "30vw";
+  document.getElementById("m").style.width = "70vw"
+  document.getElementById("uhhhh").style.display = "block"
+}
+
+function closeNav() {
+  document.getElementById("toppart").style.width = "0";
+  document.getElementById("m").style.width = "100vw"
+  document.getElementById("uhhhh").style.display = "flex"
+
+}
+
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Fira+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Outfit:wght@200;300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <title>TARDIS</title>
+</head>
+<body>
+    <div class="container">
+    <div id="toppart" class="toppart">
+        <br>
+        <img src="1685430215358-removebg-preview.png" alt="TARDIS" width="225" height="225">
+        <nav class="bar">
+            <ul>
+                <a href="javascript:void(0)" class="closebtn"  id="close"  onclick="closeNav()">x</a>
+                <li><a href="INDEX.html">Home</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="log-in.html">Log-in</a></li>
+                <li><a href="console.html">Console</a></li>
+                <li><a href="database.html">Historical Database</a></li>
+                <li><a href="travel_log.html">Travel Log</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main" id="m">
+        <div class="header">
+            <div class="unp">
+            <span onclick="openNav()">☰</span>
+            </div>
+            <center>
+                <br>
+                <h1 class="heading">Console</h1>
+            </center>
+        </div>
+        <div class="console">
+        <h2 class="info" >Control the Tardis here- </h2>
+        <br>
+        <form onsubmit="return false">
+            <div class="choice" id="uhhhh">
+                <div class="time">
+                    <center>
+                        <a onclick="big()"><h2 class="h1">Through Time</h2></a>
+                    </center>
+                    <div class="main_time">
+                        <label for="date">Enter the date to which you want to time travel?</label>
+                        <br>
+                        <input type="date" name="date" id="d">
+                        <br><br>
+                        <label for="c_circuit">What do you want the tardis to look like?</label>
+                        <br>
+                        <input type="text" name="c_c" id="cc">
+                        <br><br>
+                        <label for="safety protocols">For your safety, here are some safety protocols:</label>
+                        <ul>
+                            <li>After you submit this form, we will generate a portal to the location you are on, Please wear something rigid like an astronaut's suit to protect yourself from the portal. If you don't do this genetic manipulations can take place inside your body which could result in death or permanent memory loss.</li>
+                            <br>
+                            <li>Be mindful of where you travel to as the tardis can enable you to travel to alternate universes and fictional worlds. Though we advise against this, but if it is absolutely necessary you can select this feauture</li>
+                        </ul>
+                        <br><br>
+                        <label>Do you want to travel to an alternate or fictional universe?</label>
+                        <br>
+                        <input type="text" name="y/n" id="n/y">
+                        <br><br>
+                        <label>If yes, which fictional/alternate universe do you want to travel to?(no, then ignore)</label>
+                        <br>
+                        <input type="text" name="f_u" id="fictional">
+                        <br><br>
+                            <input type="submit" value="Time Travel" class="t_t">
+                    </div>
+                </div>
+                <div class="b">
+
+                </div>
+                <br><br>
+                <div class="space">
+                    <center>
+                        <h2>Through Space</h2>
+                    </center>
+                    <br>
+                        <div class="main_space">
+                            <label for="date">Enter the where you want to travel?</label>
+                            <br>
+                            <input type="text" name="p" id="p">
+                            <br><br>
+                            <label for="c_circuit">What do you want the tardis to look like?</label>
+                            <br>
+                            <input type="text" name="c_c" id="cc">
+                            <br><br>
+                            <label for="safety protocols">For your safety, here are some safety protocols:</label>
+                            <ul>
+                                <li>After you submit this form, we will generate a portal to the location you are on, Please wear something rigid like an astronaut's suit to protect yourself from the portal. If you don't do this genetic manipulations can take place inside your body which could result in death or permanent memory loss.</li>
+                                <br>
+                                <li>Be mindful of where you travel to as the tardis can enable you to travel to various galaxies and to the other side of black holes. Though we advise against this, but if it is absolutely necessary you can select this feauture</li>
+                            </ul>
+                            <br><br>
+                            <label>Do you want to travel to an alternate or fictional galaxy</label>
+                            <br>
+                            <input type="text" name="y/n" id="n/y">
+                            <br><br>
+                            <label>If yes, which fictional/alternate galaxy do you want to travel to?(no, then ignore)</label>
+                            <br>
+                            <input type="text" name="f_u" id="fictional">
+                            <br><br>
+                                <input type="submit" value="Launch" class="t_t">
+                        </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="end">
+
+    </div>
+    </div>
+</body>
+</html>

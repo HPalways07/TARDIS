@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+.toppart{
+    background-color: rgb(37, 37, 37);
+    color: white;
+    width: 0vw;
+    font-family: 'Outfit';
+    overflow-x: hidden;
+    transition: 0.5s; 
+    z-index: 1; 
+    top: 0;
+}
+.toppart a{
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.toppart a:hover{
+    text-shadow: 0 0 10px #05c5ff;
+}
+.toppart .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.bar{
+    padding: 45px;
+}
+.bar li{
+    list-style: none;
+    font-size: 20px;
+    padding: 13px 0;
+}
+.main{
+    background-color: white;
+    width: 100vw;
+    padding: 33px;
+    font-family: 'Outfit';
+    font-size: 20px ;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+}
+.header{
+    height: 500px;
+    width: device-width;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+}
+.heading{
+    font-size: 200px;
+    color: white;
+    text-shadow: 0 0 10px rgb(0, 0, 49);
+    font-family: 'Great Vibes';
+    font-weight: 500;
+}
+.info{
+    padding-left: 66px;
+    padding-top: 33px;
+    padding-bottom: 55px;
+    padding-right: 66px;
+}
+.info h2{
+    font-family: 'Dancing Script';
+    font-size: 40px;
+    font-weight: 500;
+    color: blueviolet;
+}
+.end{
+    width: device-width;
+    height: 100px;
+    background-color: black;
+}
+.unp{
+    padding: 30px;
+    color: white;
+}
+.h{
+    font-size: 20px;
+}
+    input[type=text], select, textarea {
+  width: 80vw;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: 'Outfit';
+  font-size: 20px;
+}
+.submit{
+        color: white;
+        background: red;
+        width: 200px;
+        height: 6vh;
+    border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+    align-items: center;
+    font-weight: bolder;
+    font-family: 'Outfit';
+    font-size: 20px;
+    }
+    .😀{
+        background-color: aliceblue;
+        width: 80vw;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: 'Outfit';
+  font-size: 20px;
+  height: 200px;
+  display: none;
+    }
+    </style>
+    <script>
+        var a = 1
+        function openNav() {
+    document.getElementById("toppart").style.width = "30vw";
+    document.getElementById("m").style.width = "70vw"
+    document.getElementById("sub").style.width = "60vw"
+  }
+  
+  function closeNav() {
+    document.getElementById("toppart").style.width = "0";
+    document.getElementById("m").style.width = "100vw"
+    document.getElementById("sub").style.width = "80vw"
+  }
+  function save() {
+    document.getElementById("text").innerHTML = document.getElementById("sub").value;
+    document.getElementById("idk").style.display = "block"
+    document.getElementById("faltu").innerHTML = a
+    a = a + 1
+  }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Fira+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Outfit:wght@200;300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <title>TARDIS</title>
+</head>
+<body>
+    <div class="container">
+    <div id="toppart" class="toppart">
+        <br>
+        <img src="1685430215358-removebg-preview.png" alt="TARDIS" width="225" height="225">
+        <nav class="bar">
+            <ul>
+                <a href="javascript:void(0)" class="closebtn"  id="close"  onclick="closeNav()">x</a>
+                <li><a href="INDEX.html">Home</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="log-in.html">Log-in</a></li>
+                <li><a href="console.html">Console</a></li>
+                <li><a href = "database.html">Historical Database</a></li>
+                <li><a href = "travel_log.html">Travel Log</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main" id="m">
+        <div class="header">
+            <div class="unp">
+            <span onclick="openNav()">☰</span>
+            </div>
+            <center>
+                <br><br>
+                <h1 class="heading">Travel Log</h1>
+            </center>
+        </div>
+        <div class="info">
+            <h2>Journal about your experiences here!</h2>
+            <br>
+            <div class="😀" id="idk">
+                <p>Journal <span id="faltu"></span>: <span id="text"></span></p>
+            </div>
+            <form onsubmit="return false">
+                <textarea name="sub" id="sub" placeholder="Write about your experiences here!" style="height: 200px; width: 80vw;"></textarea>
+                <br>
+                <input type="submit" value="Save" class="submit" onclick="save()">
+            </form>
+        </div>
+        <div class="end">
+
+        </div>
+    </div>
+    </div>
+</body>
+</html>
